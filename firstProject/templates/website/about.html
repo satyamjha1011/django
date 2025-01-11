@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - My Colorful Website</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+        <nav>
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'contact' %}">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>About Page</h2>
+            <p>This is the about page where you can learn more about us.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Colorful Website</p>
+    </footer>
+</body>
+</html>
